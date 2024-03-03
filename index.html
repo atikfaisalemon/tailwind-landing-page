@@ -25,7 +25,9 @@
         </a>
         <button
           id="menu"
-          class="focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-400 transition-colors"
+          class="lg:hidden focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-400 transition-colors"
+          aria-expanded="false"
+          aria-label="Open Menu"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -43,38 +45,34 @@
           </svg>
         </button>
         <div
-          id="menubar"
-          class="flex flex-col gap-4 absolute bg-amber-400 text-neutral-900 right-0 left-0 top-16 shadow-xl text-center text-lg p-6 dark:text-neutral-200dark:bg-neutral-800"
+          role="menubar"
+          class="hidden flex-col gap-4 absolute bg-amber-400 text-neutral-900 right-0 left-0 top-16 shadow-xl text-center text-lg p-6 dark:text-neutral-200 dark:bg-neutral-800 items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between w-full"
         >
           <a
             role="menuitem"
-            class="p-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-400 transition-colors"
+            class="p-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-400 transition-colors"
             href="/"
             >Home</a
           >
           <a
             role="menuitem"
-            class="p-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-400 transition-colors"
+            class="p-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-400 transition-colors"
             href="/"
             >Contract</a
           >
           <a
             role="menuitem"
-            class="p-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-400 transition-colors"
+            class="p-1 px-6 focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-400 transition-colors lg:mr-auto"
             href="/"
             >Login</a
           >
-          <div class="flex justify-center gap-5">
-            <div class="bg-rose-400 p-4"></div>
-          </div>
-          <div class="w-full flex gap-5">
-            <a
-              role="menuitem"
-              class="p-2 px-6 bg-teal-700 w-1/2 mx-auto focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-400 transition-colors"
-              href="/"
-              >Sing Up</a
-            >
-          </div>
+
+          <a
+            role="menuitem"
+            class="p-2 px-6 bg-teal-700 rounded-md focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 ring-offset-amber-400 text-white shadow-xl hover:shadow-none transition-shadow"
+            href="/"
+            >Sing Up</a
+          >
         </div>
       </div>
     </nav>
