@@ -46,7 +46,7 @@
         </button>
         <div
           role="menubar"
-          class="hidden flex-col gap-4 absolute bg-amber-400 text-neutral-900 right-0 left-0 top-16 shadow-xl text-center text-lg p-6 dark:text-neutral-200 dark:bg-neutral-800 items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between w-full"
+          class="hidden flex-col gap-4 absolute z-40 bg-amber-400 text-neutral-900 right-0 left-0 top-16 shadow-xl text-center text-lg p-6 dark:text-neutral-200 dark:bg-neutral-800 items-center lg:flex lg:flex-row lg:static lg:shadow-none lg:justify-between w-full"
         >
           <a
             role="menuitem"
@@ -76,6 +76,122 @@
         </div>
       </div>
     </nav>
+    <header class="relative pt-16 md:pt-24 lg:pt-48">
+      <div
+        class="absolute inset-0 bottom-8 md:bottom-24 xl:bottom-32 -z-10 bg-gradient-to-b from-amber-400 to-amber-600"
+      ></div>
+      <div class="container mx-auto grid grid-rows-1 place-items-end px-2">
+        <img
+          class="row-start-1 row-end-2 col-start-1 col-end-2 mx-auto"
+          src="/assets/couch.png"
+          alt="Couch"
+        />
+        <img
+          class="row-start-1 row-end-2 col-start-1 col-end-2 mx-auto w-40 sm:w-52 md:w-62 lg:w-72"
+          src="/assets/app.svg"
+          alt="app"
+        />
+      </div>
+    </header>
+    <main class="grid gap-12 sm:gap-24 md:gap-32 px-8 overflow-hidden">
+      <a
+        class="flex justify-center mx-auto gap-4 p-2 px-6 my-12 bg-amber-400 rounded-md focus:outline-none focus-visible:ring-4 ring-neutral-900 ring-offset-4 ring-offset-white dark:ring-amber-400 dark:ring-offset-black dark:text-neutral-900 shadow-xl hover:shadow-none transition-shadow"
+        href="#"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+          />
+        </svg>
+
+        <span>Download the app</span></a
+      >
+    </main>
+    <section aria-describedby="qualities" class="relative">
+      <h2 id="qualities" class="sr-only">Our Qualities</h2>
+      <div
+        class="container mx-auto max-w-5xl flex gap-12 flex-wrap items-start justify-center md:justify-between"
+      >
+        <div class="grid gap-4 justify-items-center text-center md:flex-1">
+          <div class="rounded-full border-8 p-4 border-amber-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-14 h-14"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"
+              />
+            </svg>
+          </div>
+          <h3 class="text-3xl font-bold">Safe</h3>
+          <p>Our Products are secure out-of-the-box</p>
+        </div>
+
+        <div class="grid gap-4 justify-items-center text-center md:flex-1">
+          <div class="rounded-full border-8 p-4 border-amber-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-14 h-14"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25"
+              />
+            </svg>
+          </div>
+          <h3 class="text-3xl font-bold">Sawwa</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel,
+            deserunt.
+          </p>
+        </div>
+
+        <div class="grid gap-4 justify-items-center text-center md:flex-1">
+          <div class="rounded-full border-8 p-4 border-amber-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-14 h-14"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+              />
+            </svg>
+          </div>
+          <h3 class="text-3xl font-bold">Good</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere,
+            blanditiis.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
